@@ -1,4 +1,4 @@
-package structs
+package book
 
 import "sync"
 
@@ -11,7 +11,7 @@ type Book struct {
 	Title  string `json:"title"`
 }
 
-func NewBook(author, title string) *Book {
+func New(author, title string) *Book {
 	book := Book{
 		Id:     genId(),
 		Author: author,

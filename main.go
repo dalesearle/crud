@@ -11,7 +11,7 @@ func main() {
 	//	req.URL.
 	//		io.WriteString(w, "Delete")
 	//}
-	h := handler.NewSimpleCrudHandler()
+	h := handler.New()
 
 	http.Handle("/library", h)
 	http.Handle("/library/", h)
